@@ -1,12 +1,10 @@
 <?php
 // $Id$
 
-
 /**
  * @file
  * Demonstrates how to work with files and the File API.
  */
-
 
 /**
  * Implements hook_menu().
