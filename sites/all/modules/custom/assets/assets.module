@@ -1,4 +1,4 @@
- <?php
+<?php
 // $Id$
 
 /**
@@ -62,4 +62,18 @@ function assets_unmanaged_file_form_validate($form, &$form_state) {
       form_set_error('unmanaged_file', t('The file could not be uploaded.'));
     }
   }
+}
+
+
+/**
+ * Implements hook_file_validate().
+ *
+ * We're testing to see if the string 'test.' exists in the file name.
+ */
+function assets_file_validate($file) {
+  $errors = array();
+  if (strpos($file->filename, 'test.') !== FALSE) {
+    $errors[] = 'The filename "test" is reserved, please change the filename and try again.';
+  }
+  return $errors;
 }
