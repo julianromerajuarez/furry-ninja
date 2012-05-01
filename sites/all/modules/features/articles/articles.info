@@ -1,6 +1,7 @@
 name = Articles
 description = All components related to the management of articles.
 core = 7.x
+
 package = Features
 dependencies[] = features
 dependencies[] = field_sql_storage
