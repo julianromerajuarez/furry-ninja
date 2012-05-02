@@ -4,7 +4,9 @@ This is a live document to list configuration and content changes that should be
 
 Next Release
 -------------------
-
+- add blog module feature
+- run selenium test 1
+- run selenium test 2
 
 1.4 (example)
 -------------------
