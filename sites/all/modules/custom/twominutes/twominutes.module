@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function twominutes_menu() {
+  $items['twominutes-page'] = array(
+    'page callback' => 'twominutes_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function twominutes_page($a = 'no a', $b = 'no b') {
+  $html = '<h1>Two Minutes Page</h1>';
+  $html .= '<p>' . $a . '</p>';
+  $html .= '<p>' . $b . '</p>';
+  return $html;
+}
